@@ -24,13 +24,17 @@
     background-image: url(../images/promo-bg-img-large.png);
   }
 
+  @media screen and (min-width: 1920px) {
+    background-position: 24rem;
+  }
+
   &__container {
     @media screen and (min-width: 1440px) {
       max-width: 100%;
       padding-left: 13.7rem;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1920px) {
       padding-left: 37.5rem;
     }
   }
@@ -93,10 +97,14 @@
     }
 
     @media screen and (min-width: 1440px) {
-      right: -28px;
+      right: -33px;
       top: -76px;
 
-      width: 50%;
+      width: 54%;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 46%;
     }
   }
 
@@ -141,7 +149,7 @@
       }
     }
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1920px) {
       left: 48rem;
     }
   }

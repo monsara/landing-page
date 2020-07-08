@@ -51,11 +51,15 @@
     margin-bottom: 9.4rem;
 
     @media screen and (min-width: 576px) {
-      max-width: 30rem;
+      max-width: 25rem;
     }
 
     @media screen and (min-width: 768px) and (orientation: portrait) {
       max-width: 21rem;
+    }
+
+    @media screen and (min-width: 812px) {
+      max-width: 30rem;
     }
 
     @media screen and (min-width: 992px) {
@@ -63,10 +67,12 @@
     }
 
     @media screen and (min-width: 1440px) {
-      margin-bottom: 18.4rem;
+      max-width: 44rem;
+      margin-bottom: 17.5rem;
     }
 
     &:last-child {
+      // max-width: 40.2rem;
       margin-bottom: 0;
     }
 
@@ -122,6 +128,11 @@
       letter-spacing: 0.03rem;
 
       color: $main-text-color;
+
+      @media screen and (min-width: 1440px) {
+        font-size: 1.8rem;
+        line-height: 1.5em;
+      }
     }
   }
 }
