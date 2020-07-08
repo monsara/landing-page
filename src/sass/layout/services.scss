@@ -1,0 +1,122 @@
+.services {
+  background-image: url(../images/services-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 47px;
+
+  @media screen and (min-width: 768px) and (orientation: landscape) {
+    padding-bottom: 15.2rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 35.2rem;
+  }
+
+  &__title {
+    margin-bottom: 9.3rem;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 17.7rem;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media screen and (min-width: 576px) {
+      display: flex;
+      flex-flow: row wrap;
+
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 97.6rem;
+      margin: auto;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    margin-bottom: 9.4rem;
+
+    @media screen and (min-width: 576px) {
+      max-width: 30rem;
+    }
+
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+      max-width: 21rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      max-width: 40.2rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 18.4rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      @media screen and (min-width: 665px) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: -5rem;
+
+      display: block;
+      width: 3.8rem;
+      height: 3.8rem;
+
+      content: '';
+
+      @media screen and (min-width: 1440px) {
+        top: -7.2rem;
+
+        width: 5.6rem;
+        height: 5.6rem;
+        margin-bottom: 18.4rem;
+      }
+    }
+
+    &-title {
+      margin-bottom: 2.6rem;
+
+      font-family: 'Proxima Nova Bold';
+      font-size: 2.2rem;
+      line-height: 1.2em;
+      letter-spacing: 0.03rem;
+
+      color: $white-color;
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 4.2rem;
+        font-size: 3.2rem;
+      }
+    }
+
+    &-text {
+      font-family: 'Proxima Nova Light';
+      font-size: 1.6rem;
+      line-height: 1.5em;
+      letter-spacing: 0.03rem;
+
+      color: $main-text-color;
+    }
+  }
+}

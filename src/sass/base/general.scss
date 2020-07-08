@@ -1,0 +1,118 @@
+.page-wrap {
+  width: 100%;
+  min-width: 37.5rem;
+  min-height: 100vh;
+
+  background: $primary-color;
+
+  @media screen and (min-width: 1440px) {
+    position: relative;
+  }
+}
+
+.main-content {
+  &__promo {
+    min-height: 40.9rem;
+
+    @media screen and (min-width: 667px) {
+      min-height: 36.1rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      position: absolute;
+      top: 120rem;
+
+      width: 130.5rem;
+      min-height: 31.1rem;
+    }
+  }
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 3rem;
+
+  @media screen and (min-width: 375px) {
+    max-width: 31.5rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 576px) {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 54rem;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+    max-width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    max-width: 96rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 114rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 117rem;
+  }
+}
+
+.section {
+  padding-top: 12.5rem;
+  padding-bottom: 8.1rem;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 22.3rem;
+  }
+
+  &__title {
+    position: relative;
+
+    font-family: 'Proxima Nova Black';
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    color: $white-color;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 4.8rem;
+    }
+
+    &::before {
+      position: absolute;
+      top: -3.4rem;
+
+      display: block;
+      width: 2rem;
+      height: 2rem;
+
+      background-image: url(../images/rectangle.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      content: '';
+
+      @media screen and (min-width: 1440px) {
+        top: -4.9rem;
+
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    &_dark {
+      color: $primary-color;
+    }
+  }
+}

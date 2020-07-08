@@ -1,0 +1,136 @@
+.promo {
+  position: relative;
+
+  padding-top: 19.1rem;
+
+  color: $white-color;
+  background-color: $accent-color;
+  text-align: center;
+
+  background-image: url(../images/promo-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+
+  @media screen and (min-width: 667px) {
+    padding-top: 6.6rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+
+    padding-top: 6.6rem;
+
+    background-image: url(../images/promo-bg-img-large.png);
+  }
+
+  &__container {
+    @media screen and (min-width: 1440px) {
+      max-width: 100%;
+      padding-left: 13.7rem;
+    }
+  }
+
+  &__content {
+    text-align: left;
+
+    @media screen and (min-width: 667px) {
+      display: flex;
+      width: 39.1rem;
+
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 48.1rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.6rem;
+
+    font-family: 'Proxima Nova Extrabold';
+    font-size: 2.24rem;
+    line-height: 1.2em;
+    letter-spacing: 0.05rem;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 0;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__text {
+    max-width: 19.1rem;
+
+    font-family: 'Proxima Nova Regular';
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    letter-spacing: 0.04rem;
+
+    @media screen and (min-width: 667px) {
+      padding-top: 3.9rem;
+      font-size: 2.4rem;
+      line-height: 1.416em;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -5.7rem;
+    right: 0;
+
+    @media screen and (min-width: 992px) {
+      width: 56%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      right: -28px;
+      top: -76px;
+
+      width: 50%;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 1.8rem 9.4rem;
+    max-width: 28rem;
+    font-family: 'Proxima Nova Bold';
+    font-size: 1.6rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+
+    color: $primary-color;
+    background: $orange-color;
+    border: none;
+    outline: none;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    @media screen and (min-width: 992px) {
+      position: absolute;
+      bottom: -3.8rem;
+      left: 233px;
+
+      max-width: initial;
+      padding: 2.4rem 12.9rem;
+
+      font-size: 2.2rem;
+
+      transform: initial;
+
+      &:hover,
+      &:focus {
+        box-shadow: inset 0 0 0 6px $orange-color;
+        background-color: $white-color;
+      }
+    }
+  }
+}

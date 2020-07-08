@@ -1,0 +1,16 @@
+.products {
+  min-height: 100px;
+  background-color: #fff;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 18.7rem;
+  }
+
+  &__title {
+    width: 29.1rem;
+
+    @media screen and (min-width: 1440px) {
+      width: 51.3rem;
+    }
+  }
+}
