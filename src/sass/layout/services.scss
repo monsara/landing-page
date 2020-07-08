@@ -2,7 +2,7 @@
   background-image: url(../images/services-bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 47px;
+  background-position: center 4.7rem;
 
   @media screen and (min-width: 768px) and (orientation: landscape) {
     padding-bottom: 15.2rem;
@@ -10,6 +10,11 @@
 
   @media screen and (min-width: 1440px) {
     padding-bottom: 35.2rem;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-size: contain;
+    background-position: center 2.3rem;
   }
 
   &__title {
