@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name=" robots " content=" noindex , nofollow " />
 
-    <title>Placeholder title</title>
+    <title>Landing Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -17,72 +23,118 @@
       <main class="main-content">
         <h1 class="visually-hidden">Main page</h1>
 
-        <section class="services">
-          <h2 class="services__title">
-            Something<br />
-            as a service
-          </h2>
+        <section class="services section">
+          <div class="container">
+            <h2
+              class="services__title section__title wow animate__animated animate__fadeInLeft"
+            >
+              Something<br />
+              as a service
+            </h2>
 
-          <ul class="services__list">
-            <li class="services__item icon-digital">
-              <h3 class="services__item-title">Digital identity</h3>
+            <ul class="services__list">
+              <li
+                class="services__item icon-digital wow animate__animated animate__fadeInUp"
+              >
+                <h3 class="services__item-title">Digital identity</h3>
 
-              <p class="services__item-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </li>
+                <p class="services__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
 
-            <li class="services__item icon-tust">
-              <h3 class="services__item-title">Trust Score</h3>
+              <li
+                class="services__item icon-trust wow animate__animated animate__fadeInUp"
+              >
+                <h3 class="services__item-title">Trust Score</h3>
 
-              <p class="services__item-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </li>
+                <p class="services__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
 
-            <li class="services__item icon-search">
-              <h3 class="services__item-title">Search engine</h3>
+              <li
+                class="services__item icon-search wow animate__animated animate__fadeInUp"
+              >
+                <h3 class="services__item-title">Search engine</h3>
 
-              <p class="services__item-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </li>
+                <p class="services__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
 
-            <li class="services__item icon-user">
-              <h3 class="services__item-title">User friendly</h3>
+              <li
+                class="services__item icon-user wow animate__animated animate__fadeInUp"
+              >
+                <h3 class="services__item-title">User friendly</h3>
 
-              <p class="services__item-text">
-                LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="promo">
-          <div class="promo__content">
-            <h2 class="promo__title">OUR LIGHTPAPER</h2>
-
-            <p class="promo__text">
-              Team is currently working on all its documents.
-            </p>
-
-            <img src="" alt="" class="promo__image" />
+                <p class="services__item-text">
+                  LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
+            </ul>
           </div>
-
-          <button class="promo__button">Download</button>
         </section>
 
-        <section class="products">
-          <h2 class="products__title">something search product</h2>
+        <section class="promo setction wow main-content__promo">
+          <div class="container promo__container">
+            <div class="promo__content">
+              <h2
+                class="promo__title wow animate__animated animate__fadeInLeft"
+              >
+                OUR <br />LIGHTPAPER
+              </h2>
+
+              <p class="promo__text wow animate__animated animate__fadeInLeft">
+                Team is currently working on all its documents.
+              </p>
+            </div>
+
+            <picture class="wow animate__animated animate__fadeInLeft">
+              <source
+                srcset="./images/promo-img-768.png"
+                media="(min-width: 992px)"
+              />
+              <img
+                src="./images/promo-img.png"
+                alt="Promo image"
+                class="promo__image"
+              />
+            </picture>
+
+            <button class="promo__button">
+              Download
+            </button>
+          </div>
+        </section>
+
+        <section class="products section">
+          <div class="products container">
+            <h2
+              class="products__title section__title section__title_dark wow animate__animated animate__fadeInUp"
+            >
+              something search product
+            </h2>
+          </div>
         </section>
       </main>
     </div>
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
+
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
