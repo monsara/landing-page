@@ -1,7 +1,101 @@
 /*
  * Все паршалы импортировать в этот файл
  */
+
+@import 'helpers/variables';
 @import 'helpers/extras';
 @import 'normalize.scss';
 @import 'fonts.scss';
 @import 'base.scss';
+
+@import 'icons.scss';
+
+.page-wrap {
+  width: 100%;
+  min-width: 37.5rem;
+  min-height: 100vh;
+
+  padding: 12.5rem 0;
+
+  background: $primary-color;
+}
+
+.main-content {
+  max-width: 31.5rem;
+  margin: auto;
+}
+
+.services {
+  &__title {
+    position: relative;
+    margin-bottom: 9.3rem;
+
+    font-family: 'Proxima Nova Black';
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    color: $white-color;
+
+    &::before {
+      position: absolute;
+      top: -3.4rem;
+
+      display: block;
+      width: 2rem;
+      height: 2rem;
+
+      background-image: url(../images/rectangle.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      content: '';
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+
+    margin-bottom: 9.4rem;
+
+    &::before {
+      position: absolute;
+      top: -5rem;
+
+      display: block;
+      width: 3.8rem;
+      height: 3.8rem;
+
+      // background-color: #fff;
+      content: '';
+    }
+
+    &-title {
+      margin-bottom: 2.6rem;
+
+      font-family: 'Proxima Nova Bold';
+      font-size: 2.2rem;
+      line-height: 1.2em;
+      letter-spacing: 0.03rem;
+
+      color: $white-color;
+    }
+
+    &-text {
+      font-family: 'Proxima Nova Light';
+      font-size: 1.6rem;
+      line-height: 1.5em;
+      letter-spacing: 0.03rem;
+
+      color: $main-text-color;
+    }
+  }
+}

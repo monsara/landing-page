@@ -1,0 +1,17 @@
+.icon {
+  &-digital::before {
+    background-image: url(../images/icons/digital.svg);
+  }
+
+  &-trust::before {
+    background-image: url(../images/icons/trust.svg);
+  }
+
+  &-search::before {
+    background-image: url(../images/icons/search.svg);
+  }
+
+  &-user::before {
+    background-image: url(../images/icons/user.svg);
+  }
+}
