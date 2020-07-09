@@ -14,3 +14,13 @@
 @import './layout/services.scss';
 @import './layout/promo.scss';
 @import './layout/products.scss';
+
+.BG {
+  background-color: #233148;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 1313px;
+  z-index: 13;
+}

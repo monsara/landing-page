@@ -7,10 +7,12 @@
   background-color: $accent-color;
   text-align: center;
 
-  background-image: url(../images/promo-bg-img.png);
+  background-image: url(../../images/promo-bg-img.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left bottom;
+
+  background-position: left 196px;
+  background-size: 20.1rem;
 
   @media screen and (min-width: 667px) {
     padding-top: 6.6rem;
@@ -21,7 +23,10 @@
 
     padding-top: 6.6rem;
 
-    background-image: url(../images/promo-bg-img-large.png);
+    background-image: url(../../images/promo-bg-img-large.png);
+
+    background-position: 13.5rem 7.2rem;
+    background-size: 24.5rem;
   }
 
   @media screen and (min-width: 1920px) {
