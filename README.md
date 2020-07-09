@@ -19,6 +19,7 @@ of Android/iOS, etc.
 - CSS Flexbox
 - CSS Media Queries
 - Mobile first
+- Pixel perfect
 - Fexible images
 - BEM methodology
 - SASS/SCSS (variables, SCSS modules)
