@@ -1,4 +1,10 @@
 .icon {
+  &::before {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   &-digital::before {
     background-image: url(../images/icons/digital.svg);
   }
